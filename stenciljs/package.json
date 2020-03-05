@@ -1,0 +1,15 @@
+{
+  "name": "stenciljs",
+  "version": "1.0.0",
+  "description": "This is StencilJS prototype",
+  "main": "index.js",
+  "scripts": {
+    "test": "Hello, this is StencilJS"
+  },
+  "repository": {
+    "type": "git",
+    "url": "vishakhamotwani.github.io"
+  },
+  "author": "Vishakha",
+  "license": "ISC"
+}
