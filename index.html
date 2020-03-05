@@ -9,7 +9,7 @@
 <script>
 document.getElementById("demo").innerHTML = "Peloton API";
 
-fetch('https://example.com/movies.json')
+fetch('https://example.com/movies.json', {mode: 'cors'})
   .then((response) => {
     return response.json();
   })
