@@ -9,16 +9,14 @@
 <script>
 document.getElementById("demo").innerHTML = "Peloton API";
 
-fetch('https://api.onepeloton.com/api/instructor', {
-method: 'get',
-  mode: 'cors'
-
-})
+fetch('https://swapi.co/api/starships/9/')
   .then((response) => {
-    console.log(response.text());
+    let newDiv = document.createElement("div");
+    let newContent = document.createTextNode(response.json()); 
+    newDiv.appendChild(newContent);  
   })
-  .then((myJson) => {
-    console.log(myJson);
+  .then((data) => {
+    console.log(data);
   });
 
 </script> 
