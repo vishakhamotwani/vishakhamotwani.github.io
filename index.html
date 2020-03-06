@@ -9,9 +9,9 @@
 <script>
 document.getElementById("demo").innerHTML = "Peloton API";
 
-fetch('https://api.onepeloton.com/api/user/chaiAddict')
+fetch('https://swapi.co/api/starships/9/')
   .then((response) => {
-    return response.json();
+    console.log(response.json());
   })
   .then((myJson) => {
     console.log(myJson);
