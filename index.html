@@ -10,10 +10,9 @@
 <script>
 document.getElementById("demo").innerHTML = "Peloton API";
 
-fetch('https://swapi.co/api/starships/9/')
+fetch('https://cors-anywhere.herokuapp.com/https://api.onepeloton.com/api/instructor')
   .then((response) => {
-    let newDiv = document.getElementById("data"); 
-    newDiv.innerHTML = response.json();  
+    console.log(response.json());
   })
   .then((data) => {
     console.log(data);
