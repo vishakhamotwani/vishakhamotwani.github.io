@@ -5,15 +5,15 @@
 <h1>Test the Peloton API</h1>
 
 <p id="demo"></p>
+  <p id="data"></p>
 
 <script>
 document.getElementById("demo").innerHTML = "Peloton API";
 
 fetch('https://swapi.co/api/starships/9/')
   .then((response) => {
-    let newDiv = document.createElement("div");
-    let newContent = document.createTextNode(response.json()); 
-    newDiv.appendChild(newContent);  
+    let newDiv = document.getElementById("data"); 
+    newDiv.innerHTML = response.json();  
   })
   .then((data) => {
     console.log(data);
