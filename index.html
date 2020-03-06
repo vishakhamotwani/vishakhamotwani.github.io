@@ -9,11 +9,8 @@
 <script>
 document.getElementById("demo").innerHTML = "Peloton API";
 
-fetch('https://api.onepeloton.com/api/user/chaiAddict', {
+fetch('https://api.onepeloton.com/api/instructor', {
 method: 'get',
-  headers: {
-    'peloton-platform': 'web'
-  },
   mode: 'cors'
 
 })
