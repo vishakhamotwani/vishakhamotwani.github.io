@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Test the Peloton API</h1>
+
+<p id="demo"></p>
+  <p id="data"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "Peloton API";
+//Using this to avoid CORS issue but this should not be used as it can sniff the incoming data
+fetch('https://cors-anywhere.herokuapp.com/https://api.onepeloton.com/api/instructor')
+  .then((response) => {
+    console.log(response.json());
+    return response.json();
+  })
+  .then((data) => {
+    console.log(data);
+  });
+
+</script> 
+
+</body>
+</html>
